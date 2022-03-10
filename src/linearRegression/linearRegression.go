@@ -1,0 +1,5 @@
+package linearRegression
+
+func LinearRegression() {
+
+}
