@@ -1,11 +1,17 @@
 package main
 
 import (
-	"github.com/TurniXXD/go-learn/goLearnKnn"
-	"github.com/TurniXXD/go-learn/matrix"
+	// eval "github.com/TurniXXD/go-learn/evaluation"
+	// knn "github.com/TurniXXD/go-learn/goLearnKnn"
+	// mat "github.com/TurniXXD/go-learn/matrix"
+	eval "github.com/TurniXXD/go-learn/evaluation"
+	knn "github.com/TurniXXD/go-learn/goLearnKnn"
+	mat "github.com/TurniXXD/go-learn/matrix"
 )
 
 func main() {
-	goLearnKnn.GoLearnKnn()
-	matrix.Matrix()
+	knn.GoLearnKnn()
+	mat.Matrix()
+	eval.ContinuousMetric()
+	eval.CategoricalMetric()
 }
