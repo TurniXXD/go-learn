@@ -127,12 +127,63 @@
 
 ## Linear Regression
 
+- Simple machine learning models mostly used to predict a continuous variable
+- it's formula is `y = mx + b` where `m` is the slope of the line and `b` is the intercept
+
+### OLS (Ordinary least squares)
+
+- Use to determine `m` and `b`
+- Pick a value for `m` and `b`
+- Measure vertical distance
+- Distances - erros or residuals
+- We use arithmetic mean for determining the shortest line by summing up errors
+
 <br>
 
 <img src="./img/lin-reg.png" style="max-width:500px"/>
 
 <br>
 
+#### Pitfalls
+
+- Be carefull while determining if regression line is suitable for values outside range
+- Don't get caught in some relation of two variables while in reality they can be totally independent
+
+#### Profiling data
+
+1. Understand
+2. Distribution
+3. Range
+4. Variability
+
+#### Histogram
+
+- You can visualize data with histogram
+- Using [boston_house_prices.csv](https://github.com/TurniXXD/go-learn/src/datasets/boston_house_prices.csv) as an example data for histogram
+  - [Example 1](https://github.com/TurniXXD/go-learn/src/DISTRICT_hist.png)
+  - [Example 2](https://github.com/TurniXXD/go-learn/src/VALUE_hist.png)
+- Use histogram for determining if we are working with the assumptions of linear regression => Test if all variables are normally distributed
+- Use (q-q) plot (quntile-quantile) to determine how close are the distributions to normal distributions
+
+#### Scatter plot
+
+- To determine which variable to use as an independent variable make scatter plot vs each other variable
+- Use scatter plots to determine most corollated variable to dependent variable and set is as an independent variable
+
+#### Generating Linear Regression plot
+- go to `./src` and run `go run main.go`
+- after that plots will be generated find variable that is most corrolated to dependent variable and enter it
+- with this selected value new plot will be generated where you can see regression line with scattered plot
+
+<br>
+
+<img src="./img/regression_line.png" style="max-width:500px"/>
+
+<br>
+
+#### Splitting dataset
+
+- After all the variables are set we split the dataset into training and testing set
 ## Logistic Regression
 
 ## Understanding clustering
